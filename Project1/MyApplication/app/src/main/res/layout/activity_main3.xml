@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <!--
+            android:textSize="20sp" for the size
+            android:hint="Automated TimeStamp" to show what i have to write
+            android:maxLength="10" How many characters you can put in a String
+            Here i used an TextInputLayout to have all the TextFields aligned nicely
+    -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149">
+
+        <TextView
+            android:id="@+id/ChosenTextID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:text="GivenValues: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userIdTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:text="User ID: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/timeStampID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TimeStamp: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/latitudeID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Latitude: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/longtitudeID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Longtitude: "
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
